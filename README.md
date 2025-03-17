@@ -40,6 +40,7 @@ composer install
 
 
 Folder Structure
+----------------------------------------------------
 app/
 │── Http/
 │   ├── Controllers/
@@ -58,7 +59,6 @@ database/
 routes/
 │── api.php
 README.md
-
 
 
 
