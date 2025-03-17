@@ -5,15 +5,16 @@ This project provides APIs for managing blog posts, user registration, and task 
 ## **Setup Instructions**
 
 ### **1. Prerequisites**
-- PHP (>= 8.0)
+- PHP 8.2.4 (cli) (built: Mar 14 2023 17:54:25) (ZTS Visual C++ 2019 x64)
 - Composer (for dependency management)
 - MySQL (or any supported database)
 - Laravel CLI (optional but recommended)
+- Laravel Framework 10.48.29
 
 ### **2. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/sagorchonchol584/Aletc.git
+cd Aletc
 ```
 
 ### **3. Install Dependencies**
@@ -32,15 +33,34 @@ composer install
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=laravel
+   DB_DATABASE=alterc
    DB_USERNAME=root
-   DB_PASSWORD=yourpassword
+   DB_PASSWORD=
    ```
 
-3. Generate an application key:
-   ```bash
-   php artisan key:generate
-   ```
+
+Folder Structure
+app/
+│── Http/
+│   ├── Controllers/
+│   │   ├── PostController.php
+│   │   ├── UserController.php
+│   │   ├── TaskController.php
+│── Models/
+│   ├── Post.php
+│   ├── User.php
+│   ├── Task.php
+database/
+│── migrations/
+│   ├── 2024_03_17_000000_create_posts_table.php
+│   ├── 2024_03_17_000001_create_users_table.php
+│   ├── 2024_03_17_000002_create_tasks_table.php
+routes/
+│── api.php
+README.md
+
+
+
 
 ### **5. Run Migrations**
 Run the following command to create the necessary database tables:
