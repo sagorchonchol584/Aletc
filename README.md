@@ -40,26 +40,8 @@ composer install
 
 
 Folder Structure
-----------------------------------------------------
-app/
-│── Http/
-│   ├── Controllers/
-│   │   ├── PostController.php
-│   │   ├── UserController.php
-│   │   ├── TaskController.php
-│── Models/
-│   ├── Post.php
-│   ├── User.php
-│   ├── Task.php
-database/
-│── migrations/
-│   ├── 2024_03_17_000000_create_posts_table.php
-│   ├── 2024_03_17_000001_create_users_table.php
-│   ├── 2024_03_17_000002_create_tasks_table.php
-routes/
-│── api.php
-README.md
 
+![image](https://github.com/user-attachments/assets/8dcd9219-2b81-4fdf-9162-852743ecf7db)
 
 
 ### **5. Run Migrations**
