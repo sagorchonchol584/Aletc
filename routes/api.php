@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RegistrationControllor;
+use App\Http\Controllers\TaskController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -31,3 +32,7 @@ Route::delete('/posts/{id}', [PostController::class, 'destroy']);
 // this is register create api list
 Route::post('/register', [RegistrationControllor::class, 'register']);
 
+//this is task managemnt
+Route::post('/tasks', [TaskController::class, 'store']);
+Route::patch('/tasks/{id}', [TaskController::class, 'update']);
+Route::get('/tasks/pending', [TaskController::class, 'getPending']);
